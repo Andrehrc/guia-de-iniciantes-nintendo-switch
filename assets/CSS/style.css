@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Lato, sans-serif;
+}
+header{
+    background-color: red;
+}
+.header{
+    margin: auto;
+    max-width: 1180px;
+    height: 100px;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo-area{
+    width: 80px;
+    height: 80px;
+}
+.logo-area img{
+    width: 100%;
+}
+.menu ul,
+.menu li{
+    list-style: none;
+}
+.menu ul{
+    display: flex;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-bottom: 5px solid red;
+}
+.menu li a:hover{
+    border-bottom: 5px solid black;
+}
+.menu .active a{
+    border-bottom: 5.5px solid black;
+}
+.main-area{
+    padding-top: 80px;
+    max-width: 1180px;
+    margin: auto;
+    display: flex;
+}
+.text-area{
+    width: 700px;
+    margin-right: 100px;
+}
+.text-area h1{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.picture{
+    width: 300px;
+    height: 300px;
+}
+.picture img{
+    width: 100%;
+}
+.section-games{
+    background-color: #F8F8F8;
+    border-top: 3px solid #DADADA;
+    border-bottom: 3px solid #DADADA;
+    margin-top: 8px;
+}
+.game-selection-area{
+    max-width: 1180px;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color: #F8F8F8;
+}
+.game-selection-area div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 150px;
+    height: 100%;
+    padding: 5px;
+    cursor: pointer;
+}
+.game-selection-area div:hover{
+    background-color: #DADADA;
+}
+.game-selection-area .active{
+    font-weight: bold;
+}
+.games{
+    background-color: #F8F8F8;
+    border-bottom: 3px solid #DADADA;
+}
+.game-titles{
+    max-width: 1180px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.models{
+    display: none;
+}
+.games1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.game{
+    height: 70px;
+    min-width: 220px;
+    max-width: 220px;
+    margin: 10px 10px 10px 0px;
+    background-color: #DADADA;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.game a {
+    display:flex;
+    align-items:center;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+.img-preview-area{
+    height: 70px;
+}
+.img-preview-area img {
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.name-preview-area{
+    padding: 5px;
+}
+.game-info-area{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 1180px;
+    height: 450px;
+    background-color: #DADADA;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 200px;
+    box-shadow: 1px 2px 5px #494949;
+}
+.left-side{
+    width: 500px;
+    height: 270px;
+}
+.text-area{
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    line-height: 1.5;
+}
+.game-title{
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px #494949;
+}
+.left-side .button-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.text-area a{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+}
+.trailer-area{
+    text-align: center;
+    padding-right: 50px;
+    padding-bottom: 30px;
+}
+.trailer-area h1 {
+    margin-bottom: 18px;
+    text-shadow: 1px 1px 2px #494949;
+}
+.desc-area{
+    text-indent: 30px
+}
+.game-info-wait{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 1180px;
+    height: 450px;
+    background-color: #DADADA;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 200px;
+    box-shadow: 1px 2px 5px #494949;
+}
+.wait-text{
+    width: 500px;
+    text-shadow: 2px 1px 2px #494949;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 50px;
+}
+.wait-img img{
+    width: 500px;
+    margin-right: 50px;
+}
+.spin-offs span, 
+.main-series span{
+    font-weight: bold;
+}
+
+.hide{
+    display: none;
+}

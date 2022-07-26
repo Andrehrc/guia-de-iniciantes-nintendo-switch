@@ -41,8 +41,9 @@ function mario(e){
     c('.game-info-area').classList.add('hide')
     c('.game-info-wait').classList.remove('hide')
     c('.spin-offs').classList.remove('hide')
-    //c('.game-selection-area .active').classList.remove('active')
-    //e.target.classList.add('active')
+    c('.game-selection-area .active').classList.remove('active')
+    c('#first').classList.add('active')
+
 }
 function zelda(e){
     c('.main-series .games1').innerHTML = ''
@@ -111,6 +112,8 @@ function bayonetta(e){
     c('.game-selection-area .active').classList.remove('active')
     e.target.classList.add('active')
 }
-
-
+function start(){
+    c('.game-selection-area div').classList.add('active')
+}
 mario()
+start()

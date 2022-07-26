@@ -1,3 +1,6 @@
+/* --------------
+    COMMON AREA
+   -------------- */
 *{
     box-sizing: border-box;
     margin: 0;
@@ -50,6 +53,9 @@ header{
 .menu .active a{
     border-bottom: 5.5px solid black;
 }
+/* --------------
+     INDEX AREA
+   -------------- */
 .main-area{
     padding-top: 80px;
     max-width: 1180px;
@@ -72,6 +78,43 @@ header{
 .picture img{
     width: 100%;
 }
+/* -------------------
+     HIGHLIGHTS AREA
+   ------------------ */
+.models{
+    display: none;
+}
+.game{
+    height: 70px;
+    min-width: 220px;
+    max-width: 220px;
+    margin: 10px 10px 10px 0px;
+    background-color: #DADADA;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.game a {
+    display:flex;
+    align-items:center;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+.img-preview-area{
+    height: 70px;
+}
+.img-preview-area img {
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.name-preview-area{
+    padding: 5px;
+}
+
 .section-games{
     background-color: #F8F8F8;
     border-top: 3px solid #DADADA;
@@ -114,43 +157,15 @@ header{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.models{
-    display: none;
+.spin-offs span, 
+.main-series span,
+.virtual-console span{
+    font-weight: bold;
 }
 .games1{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-}
-.game{
-    height: 70px;
-    min-width: 220px;
-    max-width: 220px;
-    margin: 10px 10px 10px 0px;
-    background-color: #DADADA;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    border-radius: 10px;
-    cursor: pointer;
-}
-.game a {
-    display:flex;
-    align-items:center;
-    text-decoration: none;
-    color: black;
-    width: 100%;
-}
-.img-preview-area{
-    height: 70px;
-}
-.img-preview-area img {
-    height: 100%;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-.name-preview-area{
-    padding: 5px;
 }
 .game-info-area{
     display: flex;
@@ -165,10 +180,6 @@ header{
     margin-bottom: 200px;
     box-shadow: 1px 2px 5px #494949;
 }
-.left-side{
-    width: 500px;
-    height: 270px;
-}
 .text-area{
     display: flex;
     flex-direction: column;
@@ -180,6 +191,13 @@ header{
     font-size: 25px;
     margin-bottom: 30px;
     text-shadow: 1px 1px 2px #494949;
+}
+.left-side{
+    width: 500px;
+    height: 270px;
+}
+.desc-area{
+    text-indent: 30px
 }
 .left-side .button-div{
     display: flex;
@@ -203,9 +221,6 @@ header{
 .trailer-area h1 {
     margin-bottom: 18px;
     text-shadow: 1px 1px 2px #494949;
-}
-.desc-area{
-    text-indent: 30px
 }
 .game-info-wait{
     display: flex;
@@ -232,12 +247,6 @@ header{
     width: 500px;
     margin-right: 50px;
 }
-.spin-offs span, 
-.main-series span,
-.virtual-console span{
-    font-weight: bold;
-}
-
 .hide{
     display: none;
 }

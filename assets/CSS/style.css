@@ -233,7 +233,8 @@ header{
     margin-right: 50px;
 }
 .spin-offs span, 
-.main-series span{
+.main-series span,
+.virtual-console span{
     font-weight: bold;
 }
 

@@ -167,6 +167,7 @@ header{
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 .game-info-area{
     display: flex;
     justify-content: space-around;
@@ -198,6 +199,10 @@ header{
 }
 .desc-area{
     text-indent: 30px
+}
+.desc-area span{
+    font-size: 10px;
+    color: red;
 }
 .left-side .button-div{
     display: flex;

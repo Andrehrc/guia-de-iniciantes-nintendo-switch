@@ -33,9 +33,9 @@ let marioJsonVC = [
 
 
 let zeldaJson = [
-    {name: 'The Legend of Zelda - Breath of the Wild', pic: '../images/zelda1.png', desc: '', video: '', shop: ''},
-    {name: "The Legend of Zelda - Link's Awakening", pic: '../images/zelda2.png', desc: '', video: '', shop: ''},
-    {name: 'The Legend of Zelda - Skyward Sword', pic: '../images/zelda3.png', desc: '', video: '', shop: ''}
+    {name: 'The Legend of Zelda - Breath of the Wild', pic: '../images/zelda1.png', desc: '', video: '', shop: 'https://www.nintendo.com/store/products/the-legend-of-zelda-breath-of-the-wild-switch/'},
+    {name: "The Legend of Zelda - Link's Awakening", pic: '../images/zelda2.png', desc: '', video: '', shop: 'https://www.nintendo.com/store/products/the-legend-of-zelda-links-awakening-switch/   '},
+    {name: 'The Legend of Zelda - Skyward Sword', pic: '../images/zelda3.png', desc: '', video: '', shop: 'https://www.nintendo.com/store/products/the-legend-of-zelda-skyward-sword-hd-switch/'}
 ]
 let zeldaJsonSpinoff = [
     {name: 'Hyrule Warriors - Definitive Edition', pic: '../images/zeldaspin1.png', desc:'', video:'https://www.youtube.com/embed/DUzdlDiFUyU', shop:'https://www.nintendo.com/store/products/hyrule-warriors-definitive-edition-switch/'},
@@ -52,17 +52,17 @@ let zeldaJsonVC = [
 
 
 let pokemonJson = [
-    {name: 'Pokémon Sword & Shield', pic: '../images/poke1.png', desc: '', video: '', shop: ''},
-    {name: 'Pokémon Brilliant Diamond & Shinning Pearl', pic: '../images/poke2.png', desc: '', video: '', shop: ''},
-    {name: 'Pokémon Skarlet & Violet', pic: '../images/poke3.png', desc: '', video: '', shop: ''}
+    {name: 'Pokémon Sword & Shield', pic: '../images/poke1.png', desc: '', video: '', shop: 'https://www.nintendo.com/store/products/pokemon-sword-and-pokemon-shield-double-pack-digital-version-switch/'},
+    {name: 'Pokémon Brilliant Diamond & Shinning Pearl', pic: '../images/poke2.png', desc: '', video: '', shop: 'https://www.nintendo.com/store/products/pokemon-brilliant-diamond-and-pokemon-shining-pearl-double-pack-switch/'},
+    {name: 'Pokémon Skarlet & Violet', pic: '../images/poke3.png', desc: '', video: '', shop: 'https://www.nintendo.com/store/products/pokemon-scarlet-and-pokemon-violet-double-pack-switch/'}
 ]
 let pokemonJsonSpinoff = [
-    {name: 'Pokkén Tournament DX', pic: '../images/pokespin1.png', desc: '', video: '', shop: ''},
-    {name: "Pokémon Let's Go Pikachu & Eevee", pic: '../images/pokespin2.png', desc: '', video: '', shop: ''},
-    {name: 'Pokémon Mystery Dungeon: Rescue Team DX', pic: '../images/pokespin3.png', desc: '', video: '', shop: ''},
-    {name: 'New Pokémon Snap', pic: '../images/pokespin4.png', desc: '', video: '', shop: ''},
-    {name: 'Pokémon Unite', pic: '../images/pokespin5.png', desc: '', video: '', shop: ''},
-    {name: 'Pokémon Legends: Arceus', pic: '../images/pokespin6.png', desc: '', video: '', shop: ''}
+    {name: 'Pokkén Tournament DX', pic: '../images/pokespin1.png', desc: '', video: '', shop: 'https://www.nintendo.com/store/products/pokken-tournament-dx-switch/'},
+    {name: "Pokémon Let's Go Pikachu & Eevee", pic: '../images/pokespin2.png', desc: '', video: '', shop: 'https://www.nintendo.com/search/?q=Pok%C3%A9mon+Let%27s+Go&p=1&cat=gme&sort=df'},
+    {name: 'Pokémon Mystery Dungeon: Rescue Team DX', pic: '../images/pokespin3.png', desc: '', video: '', shop: 'https://www.nintendo.com/store/products/pokemon-mystery-dungeon-rescue-team-dx-switch/'},
+    {name: 'New Pokémon Snap', pic: '../images/pokespin4.png', desc: '', video: '', shop: 'https://www.nintendo.com/store/products/new-pokemon-snap-switch/'},
+    {name: 'Pokémon Unite', pic: '../images/pokespin5.png', desc: '', video: '', shop: 'https://www.nintendo.com/store/products/pokemon-unite-switch/'},
+    {name: 'Pokémon Legends: Arceus', pic: '../images/pokespin6.png', desc: '', video: '', shop: 'https://www.nintendo.com/store/products/pokemon-legends-arceus-switch/'}
 ]
 let pokemonJsonVC = [
     {name: 'Pokémon Puzzle League', pic: '../images/pokevc1.png', desc: '', video: '', shop: 'https://www.nintendo.com/store/products/nintendo-64-nintendo-switch-online-switch/'},
@@ -71,13 +71,13 @@ let pokemonJsonVC = [
 
 
 let kirbyJson = [
-    {name: 'Kirby Star Allies', pic: '../images/kirby1.png', desc: '', video: '', shop: ''},
-    {name: 'Kirby and the Forgotten Land', pic: '../images/kirby2.png', desc: '', video: '', shop: ''}
+    {name: 'Kirby Star Allies', pic: '../images/kirby1.png', desc: '', video: '', shop: 'https://www.nintendo.com/store/products/kirby-star-allies-switch/'},
+    {name: 'Kirby and the Forgotten Land', pic: '../images/kirby2.png', desc: '', video: '', shop: 'https://www.nintendo.com/store/products/kirby-and-the-forgotten-land-switch/'}
 ]
 let kirbyJsonSpinoff = [
-    {name: 'Super Kirby Clash', pic: '../images/kirbyspin1.png', desc: '', video: '', shop: ''},
-    {name: 'Kirby Fighters 2', pic: '../images/kirbyspin2.png', desc: '', video: '', shop: ''},
-    {name: "Kirby's Dream Buffet", pic: '../images/kirbyspin3.png', desc: '', video: '', shop: ''}
+    {name: 'Super Kirby Clash', pic: '../images/kirbyspin1.png', desc: '', video: '', shop: 'https://www.nintendo.com/store/products/super-kirby-clash-switch/'},
+    {name: 'Kirby Fighters 2', pic: '../images/kirbyspin2.png', desc: '', video: '', shop: 'https://www.nintendo.com/store/products/kirby-fighters-2-switch/'},
+    {name: "Kirby's Dream Buffet", pic: '../images/kirbyspin3.png', desc: '', video: '', shop: 'https://www.nintendo.com/store/products/kirbys-dream-buffet-switch/'}
 ]
 let kirbyJsonVC = [
     {name: "Kirby's Adventure", pic: '../images/kirbyvc1.png', desc: '', video: '', shop: 'https://www.nintendo.com/store/products/nintendo-entertainment-system-nintendo-switch-online-switch/'},

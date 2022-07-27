@@ -69,6 +69,7 @@ function loadGames(){
     c('.main-series .games1').innerHTML = ''
     c('.spin-offs .games1').innerHTML = ''
     c('.virtual-console .games1').innerHTML = ''
+    c('.trailer-area iframe').src = ''
     main.map((item, index)=>{
         let gameItem = c('.models .game').cloneNode(true)
         gameItem.setAttribute('data-key', index);

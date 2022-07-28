@@ -194,8 +194,44 @@ footer div{
     min-height: 50px;
 }
 
+.main-series-title,
+.spin-offs-title,
+.virtual-console-title{
+    font-size: 23px;
+}
 
 
+.spin-offs-title span,
+.virtual-console span{
+    display: flex;
+    align-items: center;
+}
+.spin-plus,
+.spin-minus,
+.vc-plus,
+.vc-minus{
+    width: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.spin-plus{
+    display: block;
+}
+.spin-minus{
+    display: none;
+}
+.vc-plus{
+    display: block;
+}
+.vc-minus{
+    display: none;
+}
+.spin-offs .games1{
+    display: none;
+}
+.virtual-console .games1{
+    display: none;
+}
 .spin-offs span, 
 .main-series span,
 .virtual-console span{
@@ -297,44 +333,4 @@ footer div{
 
 colgroup{
     color: #F8F8F8;
-}
-
-
-.main-series-title,
-.spin-offs-title,
-.virtual-console-title{
-    font-size: 23px;
-}
-
-
-.spin-offs-title span,
-.virtual-console span{
-    display: flex;
-    align-items: center;
-}
-.spin-plus,
-.spin-minus,
-.vc-plus,
-.vc-minus{
-    width: 20px;
-    margin-left: 5px;
-    cursor: pointer;
-}
-.spin-plus{
-    display: block;
-}
-.spin-minus{
-    display: none;
-}
-.vc-plus{
-    display: block;
-}
-.vc-minus{
-    display: none;
-}
-.spin-offs .games1{
-    display: none;
-}
-.virtual-console .games1{
-    display: none;
 }

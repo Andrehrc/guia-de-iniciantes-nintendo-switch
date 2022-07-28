@@ -65,6 +65,26 @@ function outros(e){
     e.target.classList.add('active')
     loadGames()
 }
+function toggleSpinShow(){
+    c('.spin-minus').style.display = 'block'
+    c('.spin-plus').style.display = 'none'
+    c('.spin-offs .games1').style.display = 'flex'
+}
+function toggleSpinHide(){
+    c('.spin-minus').style.display = 'none'
+    c('.spin-plus').style.display = 'block'
+    c('.spin-offs .games1').style.display = 'none'
+}
+function toggleVCShow(){
+    c('.vc-minus').style.display = 'block'
+    c('.vc-plus').style.display = 'none'
+    c('.virtual-console .games1').style.display = 'flex'
+}
+function toggleVCHide(){
+    c('.vc-minus').style.display = 'none'
+    c('.vc-plus').style.display = 'block'
+    c('.virtual-console .games1').style.display = 'none'
+}
 function loadGames(){
     c('.main-series .games1').innerHTML = ''
     c('.spin-offs .games1').innerHTML = ''
@@ -123,6 +143,8 @@ function loadGames(){
     })
     c('.game-info-area').classList.add('hide')
     c('.game-info-wait').classList.remove('hide')   
+    toggleSpinHide()
+    toggleVCHide()
 }
 function complete(){
     c('.spin-offs').classList.remove('hide')

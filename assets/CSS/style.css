@@ -352,14 +352,14 @@ colgroup{
         display: none;
         position: absolute;
         z-index: 99;
-        background-color: #c0040479;
+        background-color: #e15757f0;
         width: 70vw;
         height: calc(100vh - 100px);
         top: 100px;
         right: 0;
     }
     .menu li a{
-        height: 60px;
+        height: 90px;
         font-size: 15px;
     }
     .logo-area{
@@ -383,5 +383,14 @@ colgroup{
         margin-bottom: 25px;
         display: flex;
         justify-content: center;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .menu ul, .menu li{
+        width: 100%;
+    }
+    .twitter{
+        margin: 0;
     }
 }

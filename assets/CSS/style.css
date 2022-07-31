@@ -67,7 +67,9 @@ footer div{
     box-sizing: border-box;
     text-shadow: 1px 1px 1px #494949;
 }
-
+.menu-opener{
+    display: none;
+}
 /* --------------
      INDEX AREA
    -------------- */
@@ -241,6 +243,7 @@ footer div{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    transition: all ease 0.5;
 }
 .game-info-area{
     display: flex;
@@ -261,6 +264,7 @@ footer div{
     padding-left: 50px;
     line-height: 1.5;
     margin-right: 100px;
+
 }
 .game-title{
     font-weight: bold;
@@ -333,4 +337,51 @@ footer div{
 
 colgroup{
     color: #F8F8F8;
+}
+.teste{
+    opacity: 0;
+}
+
+@media (max-width:850px){
+    .menu-opener{
+        display: block;
+        width: 45px;    
+        margin-right: 35px;
+    }
+    nav{
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: #c0040479;
+        width: 70vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+    .menu li a{
+        height: 60px;
+        font-size: 15px;
+    }
+    .logo-area{
+        margin-left: 40px;
+    }
+    .main-area{
+        height: 100%;
+        flex-direction: column;
+    }
+    .main-area .text-area{
+        width: 80%;
+        margin-right: 0;
+        padding: 30px;
+    }
+    .front-desc{
+        font-size: 18px;
+    }
+    .picture{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: center;
+    }
 }

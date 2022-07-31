@@ -1,5 +1,8 @@
 const c = (el)=>document.querySelector(el);
 const cs = (el)=>document.querySelectorAll(el);
+let opacity = 0;
+let intervalID = 0;
+window.onload = fadeIn;
 let main = ''
 let spinOff = ''
 let VC = ''
@@ -69,6 +72,8 @@ function toggleSpinShow(){
     c('.spin-minus').style.display = 'block'
     c('.spin-plus').style.display = 'none'
     c('.spin-offs .games1').style.display = 'flex'
+    c('.spin-offs .games1').style.opacity = 0
+    setInterval(showSpin, 40);
 }
 function toggleSpinHide(){
     c('.spin-minus').style.display = 'none'
@@ -79,6 +84,8 @@ function toggleVCShow(){
     c('.vc-minus').style.display = 'block'
     c('.vc-plus').style.display = 'none'
     c('.virtual-console .games1').style.display = 'flex'
+    c('.virtual-console .games1').style.opacity = 0
+    setInterval(showVC, 40);
 }
 function toggleVCHide(){
     c('.vc-minus').style.display = 'none'
@@ -145,13 +152,50 @@ function loadGames(){
     c('.game-info-wait').classList.remove('hide')   
     toggleSpinHide()
     toggleVCHide()
+    document.querySelector('.games1').style.opacity = 0
+
 }
 function complete(){
     c('.spin-offs').classList.remove('hide')
     c('.virtual-console').classList.remove('hide')
 }
-function start(){
-    c('.game-selection-area div').classList.add('active')
+
+function fadeIn() {
+    setInterval(show, 40);
+}
+ 
+function showVC(){
+    var body = document.querySelector(".virtual-console .games1");
+    opacity = Number(window.getComputedStyle(body)
+                    .getPropertyValue("opacity"));
+    if (opacity < 1) {
+        opacity = opacity + 0.2;
+        body.style.opacity = opacity
+     } else {
+         clearInterval(intervalID);
+    }
+}
+
+function show() {
+    var body = document.querySelector(".games1");
+    opacity = Number(window.getComputedStyle(body)
+                    .getPropertyValue("opacity"));
+    if (opacity < 1) {
+        opacity = opacity + 0.2;
+        body.style.opacity = opacity
+     } else {
+         clearInterval(intervalID);
+    }
+}
+function showSpin(){
+    var body = document.querySelector(".spin-offs .games1");
+    opacity = Number(window.getComputedStyle(body)
+                    .getPropertyValue("opacity"));
+    if (opacity < 1) {
+        opacity = opacity + 0.2;
+        body.style.opacity = opacity
+     } else {
+         clearInterval(intervalID);
+    }
 }
 mario()
-start()

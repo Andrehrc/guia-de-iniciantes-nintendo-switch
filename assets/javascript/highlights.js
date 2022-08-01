@@ -198,4 +198,20 @@ function showSpin(){
          clearInterval(intervalID);
     }
 }
+
+function load(){
+    if(document.body.clientWidth<431){
+        c('.virtual-console-title span').innerHTML = 'Console Virtual (NSO*) <img class="vc-plus" onclick="toggleVCShow()" src="../images/plusicon.png" alt=""> <img class="vc-minus" onclick="toggleVCHide()" src="../images/minusicon.png" alt="">'
+    } else {
+        c('.virtuao-console-title span').innerHTML = 'Console Virtual (Nintendo Switch Online)<img class="vc-plus" onclick="toggleVCShow()" src="../images/plusicon.png" alt=""> <img class="vc-minus" onclick="toggleVCHide()" src="../images/minusicon.png" alt="">'
+    }
+}
+window.onresize=function(){
+    if(document.body.clientWidth<431){
+        c('.virtual-console-title span').innerHTML = 'Console Virtual (NSO*) <img class="vc-plus" onclick="toggleVCShow()" src="../images/plusicon.png" alt=""> <img class="vc-minus" onclick="toggleVCHide()" src="../images/minusicon.png" alt="">'
+    } else {
+        c('.virtuao-console-title span').innerHTML = 'Console Virtual (Nintendo Switch Online)<img class="vc-plus" onclick="toggleVCShow()" src="../images/plusicon.png" alt=""> <img class="vc-minus" onclick="toggleVCHide()" src="../images/minusicon.png" alt="">'
+    }
+}
 mario()
+load()

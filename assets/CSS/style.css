@@ -119,8 +119,7 @@ footer div{
 }
 .game{
     height: 70px;
-    min-width: 220px;
-    max-width: 220px;
+    width: 220px;
     margin: 10px 10px 10px 0px;
     background-color: #DADADA;
     display: flex;
@@ -331,10 +330,16 @@ footer div{
     width: 500px;
     margin-right: 50px;
 }
+.warning{
+    display: none;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
 .hide{
     display: none;
 }
-
 colgroup{
     color: #F8F8F8;
 }
@@ -392,5 +397,116 @@ colgroup{
     }
     .twitter{
         margin: 0;
+    }
+    .main-series-title, 
+    .spin-offs-title, 
+    .virtual-console-title{
+        margin-left: 15px;
+        font-size: 20px;
+    }
+    .spin-plus, 
+    .spin-minus, 
+    .vc-plus, 
+    .vc-minus{
+        width: 16px;
+    }
+    .games1{
+        margin-left: 15px;
+    }
+    .game-info-wait,
+    .game-info-area{
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+    }
+    .name-preview-area{
+        padding: 3px;
+        font-size: 12px;
+    }
+    .game {
+        height: 60px;
+        width: 150px;
+    }
+    .img-preview-area{
+        height: 60px;
+    }
+    .wait-text{
+        width: 100%;
+        margin-top: 30px;
+        font-size: 30px;
+    }
+    .wait-img{
+        display: flex;
+    }
+    .wait-img img{
+        width: 60%;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .text--area{
+        margin-right: 0;
+        padding: 10px;
+    }
+    .left-side{
+        width: 90%;
+        height: 100%;
+        margin: auto;
+    }
+    .game-title{
+        margin: auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .trailer-area{
+        padding-right: 0px;
+    }
+
+}
+@media (max-width:430px){
+    .game-selection-area{
+        height: 100%;
+        flex-wrap: wrap;
+    }
+    .game-selection-area div{
+        width: 100px;
+        height: 50px;
+    }
+    .games1{
+        justify-content: center;
+    }
+    .main-series-title, 
+    .spin-offs-title, 
+    .virtual-console-title{
+        margin-left: 0px;
+        text-align: center;
+    }
+    .spin-offs span, 
+    .main-series span, 
+    .virtual-console span{
+        justify-content: center;
+    }
+    .wait-text{
+        font-size: 25px;
+    }
+    .trailer{
+        width: 250px;
+        height: 141px;
+    }
+    .game-info-wait,
+    .game-info-area{
+        margin-bottom: 0px;
+    }
+    .warning{
+        display: block;
+    }
+}
+@media (max-width:281px){
+    .game{
+        width: 100px;
+    }   
+    .name-preview-area {
+        font-size: 10px;
     }
 }
